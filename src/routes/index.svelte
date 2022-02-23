@@ -1,0 +1,47 @@
+<script>
+	import { db } from '../firebase';
+	import { collection, doc } from 'firebase/firestore';
+
+	let callId = null;
+	let person = 'callee';
+
+	function startCall() {
+		if (!callId) {
+			const callDoc = doc(collection(db, 'calls'));
+			callId = callDoc.id;
+			person = 'caller';
+		}
+
+		location.href = `./${callId}-${person}`;
+	}
+</script>
+
+<main class="h-screen grid place-content-center">
+	<div
+		class="bg-white px-8 pb-8 pt-5 rounded-md border-2 border-gray-500 grid justify-items-center gap-5"
+	>
+		<div class="flex items-center gap-2">
+			<img src="/static/video.png" alt="video icon" class="h-16" />
+			<h1>EZ Meet</h1>
+		</div>
+
+		<div class="space-x-4">
+			<button
+				on:click={startCall}
+				class="bg-sky-500 hover:bg-sky-600 px-3.5 py-0.5 rounded-md text-white">Start</button
+			>
+			<button
+				on:click={startCall}
+				class="bg-gray-400 hover:bg-gray-500 disabled:bg-gray-200 disabled:text-gray-500 px-3.5 py-0.5 rounded-md"
+				disabled={!callId}>Join</button
+			>
+		</div>
+
+		<input
+			bind:value={callId}
+			class="px-3.5 py-0.5 w-56 text-center rounded-md border-2 border-gray-500"
+			type="text"
+			placeholder="Enter code"
+		/>
+	</div>
+</main>
