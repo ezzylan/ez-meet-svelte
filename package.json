@@ -1,6 +1,14 @@
 {
 	"name": "ez-meet-svelte",
 	"version": "1.0.0",
+	"description": "A simple WebRTC application made with Sveltekit, Tailwind CSS and Firestore Database.",
+	"author": "Ezlan Zulfiqree",
+	"license": "MIT",
+	"homepage": "https://github.com/ezzylan/ez-meet-svelte#readme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ezzylan/ez-meet-svelte"
+	},
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
@@ -20,6 +28,5 @@
 	"type": "module",
 	"dependencies": {
 		"firebase": "^9.6.6"
-	},
-	"license": "MIT"
+	}
 }

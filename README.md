@@ -1,40 +1,39 @@
-# create-svelte
+# Welcome to EZ Meet 👋
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)
+[![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/ezzylan/ez-meet-svelte#readme)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ezzylan/ez-meet-svelte/graphs/commit-activity)
+[![License: MIT](https://img.shields.io/github/license/ezzylan/ez-meet-svelte)](https://github.com/ezzylan/ez-meet-svelte/blob/master/LICENSE)
 
-## Creating a project
+> A simple WebRTC application made with Sveltekit, Tailwind CSS and Firestore Database.
 
-If you're seeing this, you've probably already done this step. Congrats!
+### 🏠 [Homepage](https://github.com/ezzylan/ez-meet-svelte#readme)
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
+### ✨ [Demo](https://ez-meet.netlify.app/)
 
-# create a new project in my-app
-npm init svelte@next my-app
+## Install
+
+```sh
+npm install
 ```
 
-> Note: the `@next` is temporary
+## Author
 
-## Developing
+👤 **Ezlan Zulfiqree**
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+-   Github: [@ezzylan](https://github.com/ezzylan)
+-   LinkedIn: [@ezlan-zulfiqree](https://linkedin.com/in/ezlan-zulfiqree)
 
-```bash
-npm run dev
+## Show your support
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+Give a ⭐️ if this project helped you!
 
-## Building
+## 📝 License
 
-To create a production version of your app:
+Copyright © 2022 [Ezlan Zulfiqree](https://github.com/ezzylan).
 
-```bash
-npm run build
-```
+This project is [MIT](https://github.com/ezzylan/ez-meet-svelte/blob/master/LICENSE) licensed.
 
-You can preview the production build with `npm run preview`.
+---
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment.
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
