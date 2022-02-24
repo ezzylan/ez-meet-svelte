@@ -21,7 +21,7 @@
 		class="bg-white px-8 pb-8 pt-5 rounded-md border-2 border-gray-500 grid justify-items-center gap-5"
 	>
 		<div class="flex items-center gap-2">
-			<img src="../../static/video.png" alt="video icon" class="h-16" />
+			<img src="static/video.png" alt="video icon" class="h-16" />
 			<h1>EZ Meet</h1>
 		</div>
 

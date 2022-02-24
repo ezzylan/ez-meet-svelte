@@ -238,7 +238,7 @@
 				class="bg-red-600 hover:bg-red-700 rounded-full p-3 flex justify-around items-center"
 				on:click={hangUpCall}
 			>
-				<img class="w-8" src="../../static/hang-up.png" alt="hang up icon" />
+				<img class="w-8" src="static/hang-up.png" alt="hang up icon" />
 				<p class="text-white text-lg font-semibold">End Call</p>
 			</div>
 		</div>
