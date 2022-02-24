@@ -183,7 +183,7 @@
 <section id="idPopup" class="absolute h-screen grid place-content-center inset-x-1/2 invisible">
 	<div class="flex flex-col items-center gap-8">
 		<div class="bg-white p-4 rounded-xl text-left border-2 border-gray-500">
-			<p class="text-2xl font-semibold">Code generated:</p>
+			<p class="text-2xl font-semibold text-center">Code generated:</p>
 			<p class="text-xl italic">{callId}</p>
 		</div>
 

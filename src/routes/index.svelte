@@ -1,22 +1,22 @@
 <script>
-	import { db } from '../firebase';
-	import { collection, doc } from 'firebase/firestore';
+	import { db } from "../firebase";
+	import { collection, doc } from "firebase/firestore";
 
 	let callId = null;
-	let person = 'callee';
+	let person = "callee";
 
 	function startCall() {
 		if (!callId) {
-			const callDoc = doc(collection(db, 'calls'));
+			const callDoc = doc(collection(db, "calls"));
 			callId = callDoc.id;
-			person = 'caller';
+			person = "caller";
 		}
 
 		location.href = `./${callId}-${person}`;
 	}
 </script>
 
-<main class="h-screen grid place-content-center">
+<main class="h-screen grid place-content-center gap-8 justify-items-center">
 	<div
 		class="bg-white px-8 pb-8 pt-5 rounded-md border-2 border-gray-500 grid justify-items-center gap-5"
 	>
@@ -28,7 +28,8 @@
 		<div class="space-x-4">
 			<button
 				on:click={startCall}
-				class="bg-sky-500 hover:bg-sky-600 px-3.5 py-0.5 rounded-md text-white">Start</button
+				class="bg-sky-500 hover:bg-sky-600 px-3.5 py-0.5 rounded-md text-white"
+				>Start</button
 			>
 			<button
 				on:click={startCall}
@@ -43,5 +44,19 @@
 			type="text"
 			placeholder="Enter code"
 		/>
+	</div>
+
+	<div class="bg-white p-4 rounded-md border-2 border-gray-500 w-4/5 sm:w-96">
+		<h3 class="font-semibold text-center">ATTENTION</h3>
+		<ul class="list-disc list-inside">
+			<li class="text-xl text-justify">
+				For the most optimal experience, open this app on a
+				laptop/desktop.
+			</li>
+			<li class="text-xl text-justify">
+				Make sure to be ready before entering a room as the webcam and
+				microphone are automatically enabled.
+			</li>
+		</ul>
 	</div>
 </main>
